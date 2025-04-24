@@ -1,0 +1,34 @@
+class Res {
+  static const String bandcamp = "assets/images/bandcamp.png";
+  static const String bilibili = "assets/images/bilibili.png";
+  static const String bitchute = "assets/images/bitchute.png";
+  static const String blogger = "assets/images/blogger.png";
+  static const String breakcom = "assets/images/break.png";
+  static const String dailymotion = "assets/images/dailymotion.png";
+  static const String douyin = "assets/images/douyin.png";
+  static const String espn = "assets/images/espn.png";
+  static const String facebook = "assets/images/facebook.png";
+  static const String flickr = "assets/images/flickr.png";
+  static const String gag = "assets/images/gag.png";
+  static const String idea = "assets/images/idea.png";
+  static const String imdb = "assets/images/imdb.png";
+  static const String imgur = "assets/images/imgur.png";
+  static const String instegram = "assets/images/instegram.png";
+  static const String izlesene = "assets/images/izlesene.png";
+  static const String kwai = "assets/images/kwai.png";
+  static const String linkedin = "assets/images/linkedin.png";
+  static const String logo = "assets/app_icon.png";
+  static const String logo1 = "assets/images/logo1.png";
+  static const String mashable = "assets/images/mashable.png";
+  static const String reddit = "assets/images/reddit.png";
+  static const String soundcloud = "assets/images/soundcloud.png";
+  static const String statuspic = "assets/images/statuspic.png";
+  static const String streamable = "assets/images/streamable.png";
+  static const String ted = "assets/images/ted.png";
+  static const String tiktok = "assets/images/tiktok.png";
+  static const String twitch = "assets/images/twitch.png";
+  static const String twitter = "assets/images/twitter.png";
+  static const String video_loader = "assets/images/video_loader.gif";
+  static const String vimeo = "assets/images/vimeo.png";
+  static const String whatsapp = "assets/images/whatsapp.png";
+}
