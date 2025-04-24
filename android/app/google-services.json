@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "709790319680",
+    "project_id": "vaught-f2ab2",
+    "storage_bucket": "vaught-f2ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709790319680:android:95368f8d0661b81ec1cba5",
+        "android_client_info": {
+          "package_name": "com.vaught.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709790319680-oi2q6lnov0mpt2r156uumplqa58m8pk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn8b3ZIROMjb0WMtyOKG1i8dap047jp24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709790319680-oi2q6lnov0mpt2r156uumplqa58m8pk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
