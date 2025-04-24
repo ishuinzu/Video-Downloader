@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Paypal</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="main.js"></script>
+    <style>
+
+        .center_class{
+        display:flex;
+        justify-content: center;
+        align-items: center
+        }
+
+    </style>
+</head>
+<body>
+<div id="paypal-button-container"></div>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+
+// Render the PayPal button
+paypal.Button.render({
+// Set your environment
+env: 'sandbox', // sandbox | production
+
+// Specify the style of the button
+style: {
+  layout: 'vertical',  // horizontal | vertical
+  size:   'responsive',    // medium | large | responsive
+  shape:  'rect',      // pill | rect
+  color:  'gold'       // gold | blue | silver | white | black
+},
+
+// Specify allowed and disallowed funding sources
+//
+// Options:
+// - paypal.FUNDING.CARD
+// - paypal.FUNDING.CREDIT
+// - paypal.FUNDING.ELV
+funding: {
+  allowed: [
+    paypal.FUNDING.CARD,
+    paypal.FUNDING.CREDIT
+  ],
+  disallowed: []
+},
+
+// PayPal Client IDs - replace with your own
+// Create a PayPal app: https://developer.paypal.com/developer/applications/create
+client: {
+  sandbox: 'AVkYpcbfhlkGuECyPWRsVIFHpU79vQCnrr1GjkvQnjHA9MUD99qXGNpXxr5YUvh4JyDjcRNm9xjJqMX4',
+  production: '<insert production client id>'
+},
+
+payment: function (data, actions) {
+  return actions.payment.create({
+    payment: {
+      transactions: [
+        {
+          amount: {
+            total: 12,
+            currency: 'USD'
+          }
+        }
+      ]
+    }
+  });
+},
+
+onAuthorize: function (data, actions) {
+  return actions.payment.execute()
+    .then(function () {
+      window.alert('Payment Complete!');
+      showToast();
+    });
+}
+}, '#paypal-button-container');
+
+function getAmount() {
+var lo=app.Amount();
+return lo;
+}
+
+    function showToast() {
+    app.makeToast("Order Paid");
+    return false;
+    }
+
+
+</script>
+</body>
+</html>
